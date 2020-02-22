@@ -1,0 +1,75 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="HCI.css" media="screen" />
+</head>
+
+<div id="frame">
+  <div id="instructions-panel">
+    <h2 class="header">Step 1
+        <img id = "img" src="ginger.svg">
+        <img id = "img" src="garlic-svgrepo-com.svg">
+        <img id = "img" src="onion.svg">
+        <img id = "img" src="pepper.svg">
+        <img id = "img" src="lemongrass.svg">
+    </h2>
+    <div class="step1-contents">
+      <div class="description">
+        <p>Start by finely mincing the ginger, garlic, green onion, red pepper and lemongrass salks (fresh or paste).</p>
+      </div>
+    </div>
+
+    <h2 class="header">Step 2
+        <img id = "img" src="roasted-chicken.svg">
+        <img id = "img" src="salt.svg">
+        <img id = "img" src="soy-sauce.svg">
+        <img id = "img" src="olive-oil.svg">
+        <img id = "img" src="srirachabottle.svg">
+    </h2>
+        <div class="step2-contents">
+      <div class="description">
+        <p>To the chicken...add the garlic, ginger, red pepper, green onion, lemongrass (fresh or paste), soy sauce, sesame oil, siracha & salt to taste. Mix everything up well with the chicken.</p>
+      </div>
+    </div>
+
+
+    <h2 class="header">Step 3</h2>
+      <div class="step3-contents">
+    <div class="description">
+      <p>3.1 <br> Take a gyoza wrapper. Scoop about 1/2 tbsp of the chicken filling in the center of the wrapper.</p>
+      <img id = "img2" src="step3_1.png">
+      <p>3.2 <br> Wet the outer edge of the wrapper with water. Then fold the wrapper in half pinching only the center. </p>
+      <img id = "img2" src="step3_2.png">
+      <p>3.3 <br> Make a couple folds on both sides of the center towards it. Before sealing the end, make sure there aren’t any air pockets inside and pinch the edges well.s</p>
+      <img id = "img2" src="step3_3.png">
+    </div>
+
+  </div>
+  <div id="preview-panel"></div>
+  <div id="action-panel"></div>
+</div>
+
+#frame
+  #instructions-panel
+    %h2.header Step 1
+    .step1-contents
+      .description
+        %p Start by finely mincing the ginger, garlic, green onion, red pepper and lemongrass salks (fresh or paste).
+    = succeed "{:type" do
+      %input.step-finished/
+    %h2.header Step 2
+    .step2-contents
+      .description
+        %p To the chicken...add the garlic, ginger, red pepper, green onion, lemongrass (fresh or paste), soy sauce, sesame oil, siracha  salt to taste. Mix everything up well with the chicken.
+    = succeed "{:type" do
+      %input.step-finished/
+  #preview-panel
+  #action-panel
+
+  /.frame#simple-text-widget
+    /.panel
+  /      %h1 Simple Text Widget
+   /     %img{src:"/cooking.jpg"}
+    /    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut. 
+    /    %p Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+    /.actions
+     /   %button{name:"find-out-more"}
+      /      Find Out More

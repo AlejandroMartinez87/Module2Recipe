@@ -1,0 +1,112 @@
+:scss
+
+    .frame2{
+    display: black;
+    width: 450px;
+    height: 600px;
+    background: #E6F2FF;
+    margin: 20px;
+    position: absolute;
+    }
+    
+    #instructions-panel{
+    position: relative;
+    background: white;
+    height: 90%;
+    width: auto;
+    margin: 10px 10px 10px 10px;
+    }
+    
+    #header{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    left: 75px;
+    top: 50px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #AFFFD8;
+    border: 2px solid #000000;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    }
+    
+    #help{
+    position: absolute;
+    width: 360px;
+    height: 400px;
+    margin: 50px;
+    margin-top: 80px;
+    
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #AFFFD8;
+    border: 2px solid #000000;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    }
+    
+    .description
+    {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    width: 280px;
+    bottom: 35px;
+    margin: 40px;
+    }
+    .description2
+    {
+    position: relative;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    width: 280px;
+    bottom: 35px;
+    margin: 50px;
+    }
+    
+    .sub-step{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    #img{
+    position: relative;
+    width: 80px;
+    height: 60px;
+    top: 480px;
+    left: 50px;
+    }
+    #img2{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    float: left;
+    }
+    #img3{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    float: right;
+    right: 70px;
+    }
+    
+.frame2
+    .instructions-panel
+        #header
+            .description
+                %img#img2{src:"/help.svg"}
+                %hw.header Help Page
+                %img#img3{src:"/help.svg"}
+        #help
+            .description2
+                %p.substep 1 lb ground chicken
+                %p.substep 1 1/2 tbsp garlic, minced
+                %p.substep 1 tbsp ginger, minced
+                %p.substep 2 tbsp lemongrass, finely diced or paste
+                %p.substep 1/4 cup red pepper, finely diced
+                %p.substep 3 green onions, finely diced
+                %p.substep 1 tbsp soy sauce
+                %p.substep 1 tbsp toasted sesame oil
+                %p.substep 2 tsp siracha
+                %p.substep 1 tbsp oil
+                %p.substep 1/2 cup water
+                %p.substep 50 gyoza wrappers (potsticker wrappers)
+                %p.substep Salt, to taste
+        %img#img{src:"/backward-arrow.svg"}
+        

@@ -1,0 +1,490 @@
+:scss
+    h1{
+        font-family: Zilla Slab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        /* identical to box height, or 117% */
+        color: #FFFFFF;
+    }
+    .frame{
+        width: 400px;
+        height: 21000px;
+        background: gray;
+        box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        position: absolute;
+    }
+    .panel{
+        width: 270px;
+        
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #CBCFD4;
+        margin: 30px;
+        img{
+            width: 100%;
+        }
+    }
+    .container{
+        width: 380px;
+        height: 40px;
+        position: relative
+    }
+    .actions{
+        display: flex;
+        align-items: center;    
+        margin: 30px;
+        margin-top: 20px;
+        width: 270px;
+        height: 40px;
+        button{
+            background: linear-gradient(90deg, #F27A54 0%, #A154F2 100%);
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 12px;
+            /* identical to box height */
+            text-transform: uppercase;
+            color: #FFFFFF;
+            border: none;
+        }
+    }
+    
+    
+    
+    .frame2{
+    display: black;
+    width: 500px;
+    height: 600px;
+    background: #E6F2FF;
+    overflow: scroll;
+    margin: 20px;
+    position: absolute;
+    }
+    
+    #topimg{
+        position: relative;
+        left: 35px;
+        width: 420px;
+        height: 50px;
+    }
+    
+    #img{
+        position: relative;
+        width: 25px;
+        height: 25px;
+        top: 5px;
+    }
+    
+    /* Tooltip container */
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+    
+      /* Position the tooltip text */
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -60px;
+    
+      /* Fade in tooltip */
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    
+    /* Tooltip arrow */
+    .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+    
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    #img2{
+    position: relative;
+    left: 20px;
+    width: 355px;
+    height: 100px;
+    }
+    
+    #img3{
+    position: relative;
+    left: 20px;
+    width: 355px;
+    height: 200px;
+    margin: 0px 0px 10px 0px;
+    }
+    #img4{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    }
+    
+    #imgleft{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    float: left;
+    top: 20px;
+    left: 20px;
+    }
+    #imgright{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    float: right;
+    bottom: 48px;
+    left: 4px;
+    }
+      
+    #instructions-panel{
+    position: relative;
+    background: white;
+    height: 90%;
+    width: auto;
+    margin: 10px 10px 10px 10px;
+    overflow: visible;
+    }
+      
+    .header
+    {
+        padding-left: 35px;
+        text-decoration-line: underline;
+        display: inline;
+    }
+    
+    .button-help
+    {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        border: none;
+        padding: 1rem 2rem;
+        margin: 0;
+        text-decoration: none;
+        cursor: pointer;
+        text-align: center;
+        transition: background 250ms ease-in-out, 
+                    transform 150ms ease;
+    
+        -webkit-appearance: none;
+        padding: 0px;
+        background-image: url("/help.svg");
+        background-color: #00000000;
+        width: 24px;
+        height: 24px;
+    }
+      
+    .step-contents
+    {
+        background-color: #AFFFD8;
+        width: auto;
+        margin: 20px;
+        margin-left: 0px;
+        box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+        overflow: auto;
+    }
+
+    .step-contents-warn
+    {
+        background-color: #AFFFD8;
+        border: 4px solid #FD0202;
+        width: auto;
+        margin: 20px;
+        box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+        overflow: auto;
+    }
+
+    .step-finished{
+        -webkit-appearance: none;
+        background-color: #ffffff;
+        border: 2px solid black;
+        display: inline-block;
+        padding: 14px;
+        border-radius: 2px;
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .step-finished:checked {
+        background-color: black;
+        border: 2px solid black;
+        background-image: url("/checked.svg");
+        fill: blue;
+        border-radius: 2px;
+    }
+      
+    .description
+    {
+        position: relative;
+        height: 100%;
+        margin: 20px;
+        background-color: white;
+        text-align: left;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .description-warn
+    {
+        position: relative;
+        height: 100%;
+        margin: 20px;
+        background-color: yellow;
+        text-align: center;
+        padding: 5px;
+        border-radius: 3px;
+        left: 25px;
+        width: 80%;
+    }
+    
+    // This is for step x.y where you dont want any space between the text
+    .sub-step{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .sub-step-header{
+        padding: 0px;
+        margin: 0px;
+        font-weight: bold;
+    }
+    
+    .step-margin{
+        //width: 10%;
+        //margin-left: 5px;
+        //margin-right: 0px;
+        margin-top: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        float: left;
+    }
+    
+    .step-left{
+        width: 90%;
+        margin: 0px;
+        display: table;
+        float: left;
+    }
+    
+    .step-container{
+        display:table-cell;
+        vertical-align:middle; 
+        height: 100%
+    }
+    
+    .step-right{
+        margin: 0px; 
+        width: 10%; 
+        display: table; 
+        float: right   
+    }
+  
+    
+:javascript
+    // MAIN FUNCTION FOR DOM
+    $(function(){
+        console.log("Hello World!")
+        $("button[name='find-out-more']").click(function(){
+            $(this).html("Just kidding!")
+            $(this).blur();
+        })
+    })
+    
+    
+    
+%link{href: "https://fonts.googleapis.com/css?family=Montserrat|Zilla+Slab&display=swap", rel: "stylesheet"}
+
+.frame2
+    %img#topimg{src:"/Top Navigation Bar.svg"}
+    %img#topimg{src:"/Step Navigation.svg"}
+    .instructions-panel
+        %h2.header Step 1
+        %span.tooltip
+            %img#img{src:"/ginger.svg"}
+                %span.tooltiptext 1 tbsp minced ginger
+        %span.tooltip
+            %img#img{src:"/garlic.svg"}
+                %span.tooltiptext 1/2 tbsp minced garlic
+        %span.tooltip
+            %img#img{src:"/onion.svg"}
+                %span.tooltiptext 3 finely diced green onions
+        %span.tooltip
+            %img#img{src:"/pepper.svg"}
+                %span.tooltiptext 1/4 cup finely diced red pepper
+        %span.tooltip
+            %img#img{src:"/lemongrass.svg"}
+                %span.tooltiptext 2 tbsp finely diced or paste lemongrass
+        %br
+        .step-margin
+            %input.button-help{:type => "button"}
+        .step-contents
+            .step-left
+                .step-container
+                    .description Start by finely mincing the ginger, garlic, green onion, red pepper and lemongrass salks (fresh or paste).
+            
+            .step-right
+                .step-container
+                    %input.step-finished{:type => "checkbox", :style => ""}
+
+        %h2.header Step 2
+        
+        %span.tooltip
+            %img#img{src:"/roasted-chicken.svg"}
+                %span.tooltiptext 1 ib ground chicken
+        
+        %span.tooltip
+            %img#img{src:"/salt.svg"}
+                %span.tooltiptext Salt to taste
+        
+        %span.tooltip
+            %img#img{src:"/soy-sauce.svg"}
+                %span.tooltiptext 1 tbsp soy sauce
+        
+        %span.tooltip
+            %img#img{src:"/Olive-Oil.svg"}
+                %span.tooltiptext 1 tbsp sesame oil
+        
+        %span.tooltip
+            %img#img{src:"/srirachabottle.svg"}
+                %span.tooltiptext 2 tsp sriracha
+
+        %br
+        .step-margin
+            %input.button-help{:type => "button"}
+        .step-contents
+            .step-left
+                .step-container
+                    .description To the chicken...add the garlic, ginger, red pepper, green onion, lemongrass (fresh or paste), soy sauce, sesame oil, siracha  salt to taste. Mix everything up well with the chicken.
+            .step-right
+                .step-container
+                    %input.step-finished{:type => "checkbox"}
+    
+    %h2.header Step 3
+    %span.tooltip
+        %img#img{src:"/tortillas.svg"}
+            %span.tooltiptext 50 gyoza wrappers
+    %span.tooltip
+        %img#img{src:"/measuring-water.svg"}
+            %span.tooltiptext 1/2 cup water
+
+    %br
+    .step-margin
+        %input.button-help{:type => "button"}
+    .step-contents-warn
+        .step-left
+            .step-container
+                .description
+                    %p.sub-step-header 3.1
+                    %p.sub-step Take a gyoza wrapper. Scoop about 1/2 tbsp of the chicken filling in the center of the wrapper.
+                    %p.substep
+                %img#img2{src:"/step3_1.png"}
+        .step-right
+            .step-container
+                %input.step-finished{:type => "checkbox"}
+        .step-left
+            .step-container
+                .description
+                    %p.sub-step-header 3.2 
+                    %p.sub-step Wet the outer edge of the wrapper with water. Then fold the wrapper in half pinching only the center.
+                    %p.substep
+                %img#img2{src:"/step3_2.png"}
+        .step-right
+            .step-container
+                %input.step-finished{:type => "checkbox"}        
+        .step-left
+            .step-container
+                .description
+                    %p.sub-step-header 3.3
+                    %p.sub-step Make a couple folds on both sides of the center towards it. Before sealing the end, make sure there aren’t any air pockets inside and pinch the edges well
+                    %p.substep
+                %img#img2{src:"/step3_3.png"}
+                %img#imgleft{src:"/warning.svg"}
+                .description-warn Air pockets cause pops when cooked!
+                %img#imgright{src:"/warning.svg"}
+        .step-right
+            .step-container
+                %input.step-finished{:type => "checkbox"}
+        .step-left
+            .step-container
+                .description
+                    %p.sub-step-header 3.4
+                    %p.sub-step Repeat the same with the rest of the wrappers.
+                    %p.substep
+        .step-right
+            .step-container
+                %input.step-finished{:type => "checkbox"}
+        
+    %h2.header Final Step
+    %span.tooltip
+        %img#img{src:"/Olive-Oil.svg"}
+            %span.tooltiptext 1 tbsp oil
+    %br
+    .step-margin
+        %input.button-help{:type => "button"}
+    .step-contents
+        .step-left
+            .step-container
+                .description
+                    %p.sub-step-header Final.1
+                    %p.sub-step To cook the pot stickers, heat a tablespoon of oil in a skillet with a lid. When the oil is hot, add the pot stickers, leaving space between each one. Fry the pot stickers for a couple minutes until the bottom starts turning a little golden brown.
+                    %p.substep
+        .step-right
+            .step-container
+                %input.step-finished{:type => "checkbox"}
+        
+        .step-left
+            .step-container
+                .description
+                    .sub-step-header Final.2
+                    %p.sub-step Fry the pot stickers for a couple minutes until the bottom starts turning a little golden brown.        
+                    %p.substep
+                %img#img2{src:"/finalstep_1.png"}
+        .step-right
+            .step-container
+                %input.step-finished{:type => "checkbox"}
+                
+        .step-left
+            .step-container
+                .description
+                    %p.sub-step-header Final.3
+                    %p.sub-step Then add 1/2 cup of water to the pan and put the lid on immediately. Let the pot stickers steam for 10-12 minutes. Once they are cooked, take the lid off and let it continue cooking till all the excess water evaporates and the bottoms crisp up again.
+                    %p.substep
+                %img#img3{src:"/finalstep_2.png"}
+        .step-right
+            .step-container
+                %input.step-finished{:type => "checkbox"}
+        .step-left
+            .step-container
+        .step-right
+            .step-container
